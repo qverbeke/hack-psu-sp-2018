@@ -47,44 +47,113 @@
         </div>
           <div class="col-md-1"></div>
         </div>
-        <div class="row">
+        <div class="row mc-container">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="mc-container">
+                <div class="mc-card">
                     <form class="card question">
                         <p class="card-header">Most of the cranial nerves arise from the ________.</p>
-                        <button class="btn col-auto">
-                          <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                          <div class="input-group mb-2">
+                        <div class="body">
+                        <div class="row">
+                        <div class="col-sm-2"></div>
+                        <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange('q1a1'); return false">
+                            <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
+                            <div class="input-group">
                             <div class="input-group-prepend">
-                              <div class="input-group-text">A</div>
+                              <div class="input-group-text" id="choiceq1a1">A</div>
                             </div>
-                          <input class="form-control choice" type="text" placeholder="cortex" readonly>
+                          <input class="form-control" id="choice-wordq1a1" placeholder="cortex" readonly>
                           </div>
                         </button>
-                        <button class="btn col-auto">
-                          <label class="sr-only" for="inlineFormInputGroup">Midbrain</label>
-                          <div class="input-group mb-2">
+                        </div>
+                        <div class="row">
+                        <div class="col-sm-2"></div>
+                        <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange('q1a2'); return false">
+                            <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
+                            <div class="input-group">
                             <div class="input-group-prepend">
-                              <div class="input-group-text">B</div>
+                              <div class="input-group-text" id="choiceq1a2">A</div>
                             </div>
-                          <input class="form-control" type="text" placeholder="midbrain" readonly>
+                          <input class="form-control" id="choice-wordq1a2" placeholder="cortex" readonly>
                           </div>
                         </button>
-                        <button class="btn col-auto">
-                          <label class="sr-only" for="inlineFormInputGroup">Cerebellum</label>
-                          <div class="input-group mb-2">
+                        </div>
+                        <div class="row">
+                        <div class="col-sm-2"></div>
+                        <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange('q1a3'); return false">
+                            <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
+                            <div class="input-group">
                             <div class="input-group-prepend">
-                              <div class="input-group-text">C</div>
+                              <div class="input-group-text" id="choiceq1a3">A</div>
                             </div>
-                          <input class="form-control" type="text" placeholder="cerebellum" readonly>
+                          <input class="form-control" id="choice-wordq1a3" placeholder="cortex" readonly>
                           </div>
                         </button>
+                        </div>
+                        </div>
                     </form> 
                 </div>
             </div>
         </div>
+        <div class="row mc-container">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="mc-card">
+                <form class="card question">
+                    <p class="card-header">Most of the cranial nerves arise from the ________.</p>
+                    <div class="body">
+                    <div class="row">
+                    <div class="col-sm-2"></div>
+                    <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange('q2a1'); return false">
+                        <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
+                        <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text" id="choiceq2a1">A</div>
+                        </div>
+                      <input class="form-control" id="choice-wordq2a1" placeholder="cortex" readonly>
+                      </div>
+                    </button>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-2"></div>
+                    <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange('q2a2'); return false">
+                        <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
+                        <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text" id="choiceq2a2">A</div>
+                        </div>
+                      <input class="form-control" id="choice-wordq2a2" placeholder="cortex" readonly>
+                      </div>
+                    </button>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-2"></div>
+                    <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange('q2a3'); return false">
+                        <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
+                        <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text" id="choiceq2a3">A</div>
+                        </div>
+                      <input class="form-control" id="choice-wordq2a3" placeholder="cortex" readonly>
+                      </div>
+                    </button>
+                    </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
     </div>
     
+<script>
+    
+    
+    function colorChange(anum){
+        document.getElementById("choice"+anum).style.background="#00cc99";
+        document.getElementById("choice"+anum).style.color="white";
+        document.getElementById("choice-word"+anum).style.background="#00cc99";
+        document.getElementById("choice-word"+anum).style.color="white";
+        
+    }
+</script>
 </body>
 </html>    
