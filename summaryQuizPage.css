@@ -13,8 +13,20 @@ body{
     font-weight: 700;
     margin-bottom: -5px;
 }
-.multiple-choice{
+.mc-container{
     margin-top: 50px;
+}
+.mc-card{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.mc-choice{
+    
+    
+}
+.body{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #choice{
     cursor: pointer;
