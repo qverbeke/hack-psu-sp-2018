@@ -23,7 +23,8 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^main', views.entry_page),
-    url(r'^summary$', views.summary_quiz_page),
-    url(r'^summary2$', views.summary_quiz_page2)
-
+    url(r'^start', views.entry_page),
+    url(r'^$', views.entry_page),
+    url(r'^textresults$', views.text_entered_page),
+    url(r'^videoresults$', views.link_entered_page)
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
