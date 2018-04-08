@@ -22,8 +22,10 @@ body{
     padding: 20px;
 }
 .tab{
+    list-style: none;
     background:none;
     border: solid 3px white;
+    text-decoration-color: white;
 }
 .tab:hover{
     border: solid 3px white;
@@ -38,4 +40,15 @@ body{
 .link-input{
     height: 55px;
     font-size: 25px;
+}
+.submit-row{
+    margin-top: 30px;
+}
+.submit-col{
+    text-align: center;
+}
+.submit-btn{
+    width: 100%;
+    color: #a6a6a6;
+    font-weight: 300;
 }
