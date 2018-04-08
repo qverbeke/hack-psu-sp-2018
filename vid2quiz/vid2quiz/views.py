@@ -37,7 +37,7 @@ def link_entered_page(request):
     global gap
     global summary
     global captions
-    response_dict = {"gap":gap, "summary":summary, "captions":captions}
+    response_dict = {"youtube_id":youtube_id,"gap":gap, "summary":summary, "captions":captions}
     return render(request, 'summaryQuizPage.html', response_dict)
 def text_entered_page(request):
     if request.method == "POST":
