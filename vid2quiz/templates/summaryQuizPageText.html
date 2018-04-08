@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+       <!-- Bootstrap meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Summary and Quiz</title>
+
+    <link rel = "stylesheet" href="/static/summaryQuizPage.css">
+  </head>
+<body>
+    <div class="container">
+      <div class="row video-summary">
+        <div class="col-md-1"></div>
+          <div class="summary col-md-6">
+
+            <p>Text</p>
+            <p id="textbody">Lorem ipsum dolor sit amet, at nullam laboramus vel, vix ei dicit pertinacia. Te fabulas tincidunt definitionem nec, commune assentior appellantur usu id. Ne mea nusquam docendi, ne eam oratio omittantur mediocritatem, est euismod adolescens no. In audire tritani vulputate est. Te maiorum perpetua pri, erant repudiandae te cum, sumo moderatius sed ut. Cum choro semper an, eam commune omnesque recteque an, eos in regione mandamus referrentur. This is sentence 1.
+            Lorem ipsum dolor sit amet, at nullam laboramus vel, vix ei dicit pertinacia. Te fabulas tincidunt definitionem nec, commune assentior appellantur usu id. Ne mea nusquam docendi, ne eam oratio omittantur mediocritatem, est euismod adolescens no. In audire This is sentence 2 tritani vulputate est. Te maiorum perpetua pri, erant repudiandae te cum, sumo moderatius sed ut. Cum choro semper an, eam commune omnesque recteque an, eos in regione mandamus referrentur. This is sentence 3
+            </p>
+
+        </div>
+        <script type="text/javascript">
+          function highlightText(sentence){
+            var textBody=document.getElementById("textbody").innerHTML;
+            var bIndex = textBody.indexOf("<b>");
+            if(bIndex!=-1){
+              var sbIndex=textBody.indexOf("</b>");
+              textBody=textBody.substring(0, bIndex)+textBody.substring(bIndex+3, sbIndex)+textBody.substring(sbIndex+4);
+            }
+            var textIndex = textBody.indexOf(sentence);
+            if(textIndex!=-1){
+              document.getElementById("textbody").innerHTML=textBody.substring(0,textIndex)+"<b>"+sentence+"</b>"+textBody.substring(textIndex+sentence.length);
+            }
+
+          }
+
+        </script>
+        <div class="summary col-md-4">
+            <p>Summary</p>
+            <a href="#hh" onclick="highlightText(this.innerHTML); return false;">This is sentence 1</a>
+            <a href="#hh" onclick="highlightText(this.innerHTML); return false;">This is sentence 2</a>
+            <a href="#hh" onclick="highlightText(this.innerHTML); return false;">This is sentence 3</a>
+        </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="mc-container">
+                    <form class="card question">
+                        <p class="card-header">Most of the cranial nerves arise from the ________.</p>
+                        <button class="btn col-auto">
+                          <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">A</div>
+                            </div>
+                          <input class="form-control choice" type="text" placeholder="cortex" readonly>
+                          </div>
+                        </button>
+                        <button class="btn col-auto">
+                          <label class="sr-only" for="inlineFormInputGroup">Midbrain</label>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">B</div>
+                            </div>
+                          <input class="form-control" type="text" placeholder="midbrain" readonly>
+                          </div>
+                        </button>
+                        <button class="btn col-auto">
+                          <label class="sr-only" for="inlineFormInputGroup">Cerebellum</label>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">C</div>
+                            </div>
+                          <input class="form-control" type="text" placeholder="cerebellum" readonly>
+                          </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
