@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpRequest
+from .utils import Vid2Quiz
 test_var = "wejoifwejoifewj"
 def entry_page(request):
     return render(request, 'entryPage.html')
@@ -28,16 +29,25 @@ gap = [{"original_sentence":"This is the original sentence", "gap_sentence":"Thi
 summary = [{"sentence":"sentence1", "time":1}, {"sentence":"sentence2", "time":2},{"sentence":"sentence3", "time":3},{"sentence":"sentence4", "time":4}, ]
 captions =[["sentence1", 1], ["sentence2", 2], ["senence3", 3]]
 def link_entered_page(request):
+    response_dict = {}
     if request.method == "POST":
         var_dict = dict(request.POST)
         print(var_dict)
         youtube_url = var_dict["youtube_link"][0]
         youtube_id = youtube_url[youtube_url.find("?v=")+3:]
-        print(youtube_id)
-    global gap
-    global summary
-    global captions
-    response_dict = {"gap":gap, "summary":summary, "captions":captions}
+
+        print("YOUTUBE ID:",youtube_id)
+        vid2quiz_model = Vid2Quiz(youtube_id)
+        vid2quiz_model._get_youtube_transcription()
+        vid2quiz_model._get_summary_from_text()
+        vid2quiz_model._preprocess_gapify_BTM()
+
+        summary = vid2quiz_model.get_cloud_summary()
+        captions = vid2quiz_model.get_youtube_captions()
+        gap = vid2quiz_model.gap_questions
+        print(summary)
+        response_dict = {"gap":gap, "summary":summary, "captions":captions, "youtube_id":youtube_id}
+
     return render(request, 'summaryQuizPage.html', response_dict)
 def text_entered_page(request):
     if request.method == "POST":
