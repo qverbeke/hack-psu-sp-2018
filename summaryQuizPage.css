@@ -5,6 +5,20 @@
     height: 300px;
     overflow: scroll;
 }
-.choice{
+.multiple-choice{
+    margin-top: 50px;
+}
+#choice{
     cursor: pointer;
+}
+#choice :active{
+    cursor: pointer;
+}
+#choice-word{
+    cursor: pointer;
+}
+input:active {
+outline: none;
+border-style: none;
+
 }
