@@ -26,14 +26,14 @@
         <script type="text/javascript">
           function highlightText(sentence){
             var textBody=document.getElementById("textbody").innerHTML;
-            var bIndex = textBody.indexOf("<a id=\"hh\"></a><b>");
+            var bIndex = textBody.indexOf("<b>");
             if(bIndex!=-1){
               var sbIndex=textBody.indexOf("</b>");
-              textBody=textBody.substring(0, bIndex)+textBody.substring(bIndex+18, sbIndex)+textBody.substring(sbIndex+4);
+              textBody=textBody.substring(0, bIndex)+textBody.substring(bIndex+3, sbIndex)+textBody.substring(sbIndex+4);
             }
             var textIndex = textBody.indexOf(sentence);
             if(textIndex!=-1){
-              document.getElementById("textbody").innerHTML=textBody.substring(0,textIndex)+"<a id=\"hh\"></a><b>"+sentence+"</b>"+textBody.substring(textIndex+sentence.length);
+              document.getElementById("textbody").innerHTML=textBody.substring(0,textIndex)+"<b>"+sentence+"</b>"+textBody.substring(textIndex+sentence.length);
             }
 
           }
