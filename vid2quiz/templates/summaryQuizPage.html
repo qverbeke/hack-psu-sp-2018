@@ -1,3 +1,5 @@
+{% load mathfilters %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -35,10 +37,8 @@
               var player;
               function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
-                  videoId: 'C1xwCUMbcCc',
-                  events: {
-                    'onReady': onPlayerReady,
-                  }
+                  videoId: '{{youtube_id}}',
+
                 });
               }
 
@@ -52,131 +52,89 @@
             function playerSeekTo(seconds) {
                 player.seekTo(seconds);
             }
+            </script>
+            <script>
+            function seekToWord(word){
+              var caption_list = '{{captions}}';
+              caption_list = caption_list.replace(/&#39;/g,"");
+              caption_list = caption_list.split(",");
+              var i;
+              for (i = 0; i < caption_list.length; i++){
+                caption_list[i] = caption_list[i].replace(/\W/g, '');
+                if(caption_list[i].toLowerCase() === word.toLowerCase()){
+                  caption_list[i + 1] = caption_list[i + 1].replace(/\W/g, '');
+                  playerSeekTo(caption_list[i + 1]);
+                }
+              }
 
-
-
+            }
             </script>
           </div>
-        
         <div class="summary card col-md-4">
-            <div>
             <p class="summary-title card-header">Summary</p>
-            </div>
-            <div class="card-body">
-            <p>Lorem ipsum dolor sit amet, ea appetere vivendum mea, ei est choro qualisque, has case movet tollit ei. Ignota quaeque vel ei, pri utroque quaestio instructior ut. Vidit constituto eloquentiam qui et. Eu tacimates adolescens ius, impedit legendos in has. Cu voluptua consetetur vis, dicat clita nullam ut nam. Vix animal suscipit sapientem in, vim viris soleat et.<br>
-            Quas omnis lucilius ut eos, cum an dico sonet, debet inermis per ex. Simul regione expetenda ut vix, ius platonem urbanitas persecuti ei. Has zril voluptua similique eu, ad libris facilisis eam. Te patrioque suscipiantur mea. Duo adhuc postea assueverit no, altera animal duo no, ei ferri solum docendi ius.<br>
-            Ne melius luptatum pro, invenire interpretaris eum ut. In nec veniam consulatu evertitur, vix stet utinam ad, cu nec natum cotidieque. An soluta oporteat adversarium est, quo ad oporteat interpretaris, mel te inani melius delectus. An ius adipiscing efficiantur, movet homero ad vix. At has novum doming alienum, quo ferri menandri no.</p>
-            </div>
+            {% for part in summary %}
+            <a href="" onclick=playerSeekTo({{part.time}})>{{part.sentence}}</a>
+            {% endfor %}
+            <a href=# hidden onclick=seekToWord("sentence1");>text</a>
+
         </div>
           </div>
           <div class="col-md-1"></div>
         </div>
+        {% for question in gap %}
+
         <div class="row mc-container">
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="mc-card">
                     <form class="card question">
-                        <p class="card-header">Most of the cranial nerves arise from the ________.</p>
-                        <div class="body">
-                        <div class="row">
-                        <div class="col-sm-2"></div>
-                        <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                            <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                            <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text" id="choice">A</div>
+                        <p class="card-header">{{question.gap_sentence}}</p>
+                        {% for answer in question.distractors %}
+                          <div class="body card-body">
+                          <div class="row">
+                          <div class="col-sm-2"></div>
+                          <button class="btn btn-default col-sm-8 mc-choice" onclick="checkAnswer({{ forloop.parentloop.counter|mul:4|add:forloop.counter }}, {{ question.answer }}); return false">
+                              <label class="sr-only" for="inlineFormInputGroup"></label>
+                              <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text" id="choice{{ forloop.parentloop.counter|mul:4|add:forloop.counter }}">{{ forloop.counter }}</div>
+                              </div>
+                            <input class="form-control" id="choice-word{{ forloop.parentloop.counter|mul:4|add:forloop.counter }}" placeholder={{answer}} readonly>
                             </div>
-                          <input class="form-control" id="choice-word" placeholder="cortex" readonly>
+                          </button>
                           </div>
-                        </button>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-2"></div>
-                        <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                            <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                            <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text" id="choice">A</div>
-                            </div>
-                          <input class="form-control" id="choice-word" placeholder="cortex" readonly>
                           </div>
-                        </button>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-2"></div>
-                        <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                            <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                            <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text" id="choice">A</div>
-                            </div>
-                          <input class="form-control" id="choice-word" placeholder="cortex" readonly>
-                          </div>
-                        </button>
-                        </div>
-                        </div>
+                        {% endfor %}
                     </form>
                 </div>
             </div>
         </div>
-        <div class="row mc-container">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <div class="mc-card">
-                <form class="card question">
-                    <p class="card-header">Most of the cranial nerves arise from the ________.</p>
-                    <div class="body">
-                    <div class="row">
-                    <div class="col-sm-2"></div>
-                    <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                        <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                        <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text" id="choice">A</div>
-                        </div>
-                      <input class="form-control" id="choice-word" placeholder="cortex" readonly>
-                      </div>
-                    </button>
-                    </div>
-                    <div class="row">
-                    <div class="col-sm-2"></div>
-                    <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                        <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                        <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text" id="choice">A</div>
-                        </div>
-                      <input class="form-control" id="choice-word" placeholder="cortex" readonly>
-                      </div>
-                    </button>
-                    </div>
-                    <div class="row">
-                    <div class="col-sm-2"></div>
-                    <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                        <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                        <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text" id="choice">A</div>
-                        </div>
-                      <input class="form-control" id="choice-word" placeholder="cortex" readonly>
-                      </div>
-                    </button>
-                    </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        </div>
+        {% endfor %}
+
+
     </div>
 
 <script>
 
 
-    function colorChange(){
-        document.getElementById("choice").style.background="#00cc99";
-        document.getElementById("choice").style.color="white";
-        document.getElementById("choice-word").style.background="#00cc99";
-        document.getElementById("choice-word").style.color="white";
+    function checkAnswer(counter, answer){
+        if(counter%4==answer){
+          document.getElementById("choice"+counter).style.background="#00cc99";
+          document.getElementById("choice"+counter).style.color="white";
+          document.getElementById("choice-word"+counter).style.background="#00cc99";
+          document.getElementById("choice-word"+counter).style.color="white";
+        }
+        else{
+          document.getElementById("choice"+counter).style.background="#ff3333";
+          document.getElementById("choice"+counter).style.color="white";
+          document.getElementById("choice-word"+counter).style.background="#ff3333";
+          document.getElementById("choice-word"+counter).style.color="white";
+        }
+
+
+
+
+
 
     }
 </script>

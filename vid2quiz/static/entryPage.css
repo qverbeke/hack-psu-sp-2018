@@ -1,11 +1,10 @@
 body{
-    height: 700px;
-    background: #eff5f9;
-background: -moz-linear-gradient(top, #eff5f9 0%, #6393c1 100%);
-background: -webkit-linear-gradient(top, #eff5f9 0%,#6393c1 100%);
-background: linear-gradient(to bottom, #eff5f9 0%,#6393c1 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff5f9', endColorstr='#6393c1',GradientType=0 );
-    
+    min-height: 1000px;
+    background: #e1eef7;
+    background: -moz-linear-gradient(top, #e1eef7 0%, #aecae5 19%, #94b7d3 41%, #6393c1 100%);
+    background: -webkit-linear-gradient(top, #e1eef7 0%,#aecae5 19%,#94b7d3 41%,#6393c1 100%);
+    background: linear-gradient(to bottom, #e1eef7 0%,#aecae5 19%,#94b7d3 41%,#6393c1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1eef7', endColorstr='#6393c1',GradientType=0 );
 }
 
 .navbar{
@@ -20,7 +19,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff5f9', end
     color: white;
     font-weight: 600;
     font-size: 30px;
-    
+
 }
 .page-container{
     padding-top: 15px;

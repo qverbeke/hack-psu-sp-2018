@@ -13,14 +13,13 @@
   </head>
 <body>
     <div class="container">
-        <hr>
       <div class="row video-summary">
         <div class="col-md-1"></div>
           <div class="summary col-md-6">
 
             <p>Text</p>
-            <p id="textbody">Lorem ipsum dolor sit amet, at nullam laboramus vel, vix ei dicit pertinacia. Te fabulas tincidunt definitionem nec, commune assentior appellantur usu id. Ne mea nusquam docendi, ne eam oratio omittantur mediocritatem, est euismod adolescens no. In audire tritani vulputate est. Te maiorum perpetua pri, erant repudiandae te cum, sumo moderatius sed ut. Cum choro semper an, eam commune omnesque recteque an, eos in regione mandamus referrentur. This is sentence 1.
-            Lorem ipsum dolor sit amet, at nullam laboramus vel, vix ei dicit pertinacia. Te fabulas tincidunt definitionem nec, commune assentior appellantur usu id. Ne mea nusquam docendi, ne eam oratio omittantur mediocritatem, est euismod adolescens no. In audire This is sentence 2 tritani vulputate est. Te maiorum perpetua pri, erant repudiandae te cum, sumo moderatius sed ut. Cum choro semper an, eam commune omnesque recteque an, eos in regione mandamus referrentur. This is sentence 3
+            <p id="textbody">
+              {{text}}
             </p>
 
         </div>
@@ -42,51 +41,41 @@
         </script>
         <div class="summary col-md-4">
             <p>Summary</p>
-            <a href="#hh" onclick="highlightText(this.innerHTML); return false;">This is sentence 1</a>
-            <a href="#hh" onclick="highlightText(this.innerHTML); return false;">This is sentence 2</a>
-            <a href="#hh" onclick="highlightText(this.innerHTML); return false;">This is sentence 3</a>
+            {% for part in summary %}
+            <a href=#{{part.time}} onclick="highlightText(this.innerHTML); return false;">{{part.sentence}}</a>
+            {% endfor %}
         </div>
           <div class="col-md-1"></div>
         </div>
-        
-        <hr>
-        <div class="row">
+        {% for question in gap %}
+        <div class="row mc-container">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="mc-container">
+                <div class="mc-card">
                     <form class="card question">
-                        <p class="card-header">Most of the cranial nerves arise from the ________.</p>
-                        <button class="btn col-auto">
-                          <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                          <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">A</div>
+                        <p class="card-header">{{question.gap_sentence}}</p>
+                        {% for answer in question.distractors %}
+                          <div class="body">
+                          <div class="row">
+                          <div class="col-sm-2"></div>
+                          <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
+                              <label class="sr-only" for="inlineFormInputGroup"></label>
+                              <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text" id="choice">{{ forloop.counter }}</div>
+                              </div>
+                            <input class="form-control" id="choice-word" placeholder={{answer}} readonly>
                             </div>
-                          <input class="form-control choice" type="text" placeholder="cortex" readonly>
+                          </button>
                           </div>
-                        </button>
-                        <button class="btn col-auto">
-                          <label class="sr-only" for="inlineFormInputGroup">Midbrain</label>
-                          <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">B</div>
-                            </div>
-                          <input class="form-control" type="text" placeholder="midbrain" readonly>
                           </div>
-                        </button>
-                        <button class="btn col-auto">
-                          <label class="sr-only" for="inlineFormInputGroup">Cerebellum</label>
-                          <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">C</div>
-                            </div>
-                          <input class="form-control" type="text" placeholder="cerebellum" readonly>
-                          </div>
-                        </button>
+                        {% endfor %}
                     </form>
                 </div>
             </div>
         </div>
+        {% endfor %}
+
     </div>
 
 </body>
