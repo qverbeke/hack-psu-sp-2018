@@ -54,6 +54,19 @@
         </div>
           <div class="col-md-1"></div>
         </div>
+        <div class="row search text-search">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+              <div class="input-group mb-3">
+            <input type="text" role="search" class="form-control" id="searchbar" placeholder="search the text for keywords..." aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn" type="submit"><img src="/static/search.png" class="search-button"></button>
+            </div>
+        </div>
+                <a href="" onclick="seekToWord(document.getElementById('searchbar').value); return false;" style="background-color: #AAA; height:fill-parent"><span class="input-group-addon" id="basic-addon2"></span></a>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
         {% for question in gap %}
         <div class="row mc-container">
             <div class="col-md-3"></div>
