@@ -27,31 +27,31 @@
           </div>
         <div class="tab-content content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="youtube-link" role="tabpanel">
-            <form id="form1" method="post", action="/summary">
+            <form id="form1" method="post" action="/summary">
               {% csrf_token %}
                 <input type="text" class="form-control link-input" placeholder="paste YouTube link here...">
                 <div class="col-sm-4 submit-col">
                 </div>
-                <button form="form1" class="btn btn-default submit-btn" type="submit">submit</button>
+                <button form="form1" class="btn btn-outline-light submit-btn" type="submit">submit</button>
               </form>
             </div>
           <div class="tab-pane fade" id="text-entry" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <form id="form2">
+            <form id="form2" method="post" action="/summary">
               {% csrf_token %}
               <div class="form-group">
                 <textarea class="form-control" rows="5" placeholder="Paste your text here..."></textarea>
               </div>
-              <button form="form1" class="btn btn-default submit-btn" type="submit">submit</button>
+              <button form="form1" class="btn btn-outline-light submit-btn" type="submit">submit</button>
             </form>
             </div>
           <div class="tab-pane fade" id="file-upload" role="tabpanel" aria-labelledby="link-tab-content">
-              <form id="form3">
+              <form id="form3" method="post", action="/summary">
                 {% csrf_token %}
                   <div class="form-group">
                     <label for="exampleFormControlFile1">Example file input</label>
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                   </div>
-                  <button form="form1" class="btn btn-default submit-btn" type="submit">submit</button>
+                  <button form="form1" class="btn btn-outline-light submit-btn" type="submit">submit</button>
                 </form>
             </div>
         </div>
