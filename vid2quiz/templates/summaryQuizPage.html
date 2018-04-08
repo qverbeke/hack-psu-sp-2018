@@ -12,10 +12,14 @@
     <link rel = "stylesheet" href="/static/summaryQuizPage.css">
   </head>
 <body>
-    <div class="container" style="width:100%">
-      <div class="row video-summary" style="width:100%">
+    <nav class="navbar nav-bar-default navbar-fixed-top">
+        <p class="app-name">RevU</p>
+    </nav>
+    <div class="page-container" style="width:100%">
+        <div class="col-sm-12 video-sum-container">
+      <div class="row video-sum" style="width:100%">
         <div class="col-md-1"></div>
-          <div class="col-md-6" style="width:100%">
+          <div class="col-md-6 video" style="width:100%">
             <div id="player" style="width:100%; height:100%; "></div>
 
             <script>
@@ -53,15 +57,18 @@
 
             </script>
           </div>
-        {% for c in content %}
-          <p>{{c}}</p>
-        {% endfor %}
-        <div class="summary col-md-4">
-            <p class="summary-title">Summary</p>
+        
+        <div class="summary card col-md-4">
+            <div>
+            <p class="summary-title card-header">Summary</p>
+            </div>
+            <div class="card-body">
             <p>Lorem ipsum dolor sit amet, ea appetere vivendum mea, ei est choro qualisque, has case movet tollit ei. Ignota quaeque vel ei, pri utroque quaestio instructior ut. Vidit constituto eloquentiam qui et. Eu tacimates adolescens ius, impedit legendos in has. Cu voluptua consetetur vis, dicat clita nullam ut nam. Vix animal suscipit sapientem in, vim viris soleat et.<br>
             Quas omnis lucilius ut eos, cum an dico sonet, debet inermis per ex. Simul regione expetenda ut vix, ius platonem urbanitas persecuti ei. Has zril voluptua similique eu, ad libris facilisis eam. Te patrioque suscipiantur mea. Duo adhuc postea assueverit no, altera animal duo no, ei ferri solum docendi ius.<br>
             Ne melius luptatum pro, invenire interpretaris eum ut. In nec veniam consulatu evertitur, vix stet utinam ad, cu nec natum cotidieque. An soluta oporteat adversarium est, quo ad oporteat interpretaris, mel te inani melius delectus. An ius adipiscing efficiantur, movet homero ad vix. At has novum doming alienum, quo ferri menandri no.</p>
+            </div>
         </div>
+          </div>
           <div class="col-md-1"></div>
         </div>
         <div class="row mc-container">
