@@ -16,7 +16,7 @@
 <body>
 <div class= "container">
     <div>
-        <p class="welcome">What can we summarize for you?</p>
+        <p class="welcome">What would you like to review?</p>
         <div class="row">
         <div class="col-sm-2"></div>
         <nav class="col-sm-8 card entry-card">
@@ -29,7 +29,7 @@
           <div class="tab-pane fade show active" id="youtube-link" role="tabpanel">
             <form id="form1" method="post" action="/videoresults">
               {% csrf_token %}
-                <input name="youtube_link" type="text" class="form-control link-input" placeholder="paste YouTube link here...">
+                <input name="youtube_link" type="text" class="form-control link-input" placeholder="Paste YouTube link here...">
                 <div class="col-sm-4 submit-col">
                 </div>
                 <button form="form1" class="btn btn-outline-light submit-btn" type="submit">submit</button>
@@ -39,7 +39,7 @@
             <form id="form2" method="post" action="/textresults">
               {% csrf_token %}
               <div class="form-group">
-                <textarea name="text_area" class="form-control" rows="5" placeholder="Paste your text here..."></textarea>
+                <textarea name="text_area" class="form-control text-input" rows="10" placeholder="Paste your text here..."></textarea>
               </div>
               <button form="form2" class="btn btn-outline-light submit-btn" type="submit">submit</button>
             </form>
@@ -48,7 +48,7 @@
               <form id="form3" method="post", action="/summary">
                 {% csrf_token %}
                   <div class="form-group">
-                    <label for="exampleFormControlFile1">Example file input</label>
+                    <label for="exampleFormControlFile1"></label>
                     <input name="file_upload" type="file" class="form-control-file" id="exampleFormControlFile1">
                   </div>
                   <button form="form3" class="btn btn-outline-light submit-btn" type="submit">submit</button>
