@@ -27,11 +27,15 @@
           </div>
         <div class="tab-content content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="youtube-link" role="tabpanel">
-            <form>
+            <form id="form1" method="post", action="/summary">
+              {% csrf_token %}
                 <input type="text" class="form-control link-input" placeholder="paste YouTube link here...">
+                <div class="col-sm-4 submit-col">
+                </div>
               </form>
             </div>
           <div class="tab-pane fade" id="text-entry" role="tabpanel" aria-labelledby="nav-profile-tab">
+
             <form>
               <div class="form-group">
                 <textarea class="form-control" rows="5" placeholder="Paste your text here..."></textarea>
@@ -47,13 +51,12 @@
                 </form>
             </div>
         </div>
+        <button form="form1" class="btn btn-default submit-btn" type="submit">submit</button>
         </nav>
         </div>
         <div class="row submit-row">
         <div class=col-sm-4></div>
-        <div class="col-sm-4 submit-col">
-            <button class="btn btn-default submit-btn" type="submit">submit</button>
-        </div>
+
         <div class="col-sm-4"></div>
          </div>
     </div>
