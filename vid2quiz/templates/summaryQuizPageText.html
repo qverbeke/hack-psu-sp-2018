@@ -24,49 +24,19 @@
         <div class="col-md-6 card text-card" style="width:100%">
 
             <p class="text-title card-header">Your Text</p>
-            <p class="your-text" id="textbody">
+            <div class="your-text">
               {{text}}
-            </p>
+            </div>
 
         </div>
-        <script type="text/javascript">
-          function highlightText(sentence){
-            var textBody=document.getElementById("textbody").innerHTML;
-            var bIndex = textBody.indexOf("<b>");
-            if(bIndex!=-1){
-              var sbIndex=textBody.indexOf("</b>");
-              textBody=textBody.substring(0, bIndex)+textBody.substring(bIndex+3, sbIndex)+textBody.substring(sbIndex+4);
-            }
-            var textIndex = textBody.indexOf(sentence);
-            if(textIndex!=-1){
-              document.getElementById("textbody").innerHTML=textBody.substring(0,textIndex)+"<b>"+sentence+"</b>"+textBody.substring(textIndex+sentence.length);
-            }
-
-          }
-
-        </script>
-
         <div class="summary card col-md-4">
             <p class="summary-title card-header">Summary</p>
             {% for part in summary %}
-            <a href='' onclick="highlightText({{part.sentence}}); return false;">{{part.sentence}}</a>
+            {{part.sentence}}
             {% endfor %}
         </div>
           <div class="col-md-1"></div>
         </div>
-        <div class="row search text-search">
-            <div class="col-md-2"></div>
-            <div class="col-md-4">
-              <div class="input-group mb-3">
-            <input type="text" role="search" class="form-control" id="searchbar" placeholder="search the text for keywords..." aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn" type="submit"><img src="/static/search.png" class="search-button"></button>
-            </div>
-        </div>
-                <a href="" onclick="seekToWord(document.getElementById('searchbar').value); return false;" style="background-color: #AAA; height:fill-parent"><span class="input-group-addon" id="basic-addon2"></span></a>
-              </div>
-              <div class="col-md-1"></div>
-            </div>
         {% for question in gap %}
         <div class="row mc-container">
             <div class="col-md-3"></div>
@@ -78,7 +48,7 @@
                           <div class="body">
                           <div class="row">
                           <div class="col-sm-2"></div>
-                          <button class="btn btn-default col-sm-8 mc-choice" onclick="checkAnswer({{ forloop.parentloop.counter|mul:4|add:forloop.counter }}, {{ question.answer }}, {{ question.original_sentence }}); return false">
+                          <button class="btn btn-default col-sm-8 mc-choice" onclick="checkAnswer({{ forloop.parentloop.counter|mul:4|add:forloop.counter }}, {{ question.answer }}); return false">
                               <label class="sr-only" for="inlineFormInputGroup"></label>
                               <div class="input-group">
                               <div class="input-group-prepend">
@@ -94,7 +64,7 @@
                 </div>
             </div>
             <div class="container" style="text-align: center;">
-              <b><h4 id="responseText{{ forloop.counter }}"></h4></b>
+              <b><h6 id="responseText{{ forloop.counter }}" style="color:white;"></h6></b>
             </div>
             
         </div>
@@ -104,19 +74,20 @@
 <script>
 
 
-    function checkAnswer(counter, answer, sentence){
+    function checkAnswer(counter, answer){
         if(counter%4==answer){
           document.getElementById("choice"+counter).style.background="#00cc99";
           document.getElementById("choice"+counter).style.color="white";
           document.getElementById("choice-word"+counter).style.background="#00cc99";
           document.getElementById("choice-word"+counter).style.color="white";
+          document.getElementById("responseText"+Math.floor(counter/4)).innerHTML="Correct!";
         }
         else{
           document.getElementById("choice"+counter).style.background="#ff3333";
           document.getElementById("choice"+counter).style.color="white";
           document.getElementById("choice-word"+counter).style.background="#ff3333";
           document.getElementById("choice-word"+counter).style.color="white";
-          document.getElementById("responseText"+Math.floor(counter/4)).innerHTML="<a href=\"\" style=\" color:white;\" onclick=\"highlightText("+sentence+"); return false;\">The correct answer was "+answer+". Click this link to review in the video.</a>";
+          document.getElementById("responseText"+Math.floor(counter/4)).innerHTML="That is incorrect. The correct answer was "+answer+".";
           document.getElementById("choice"+((counter-counter%4)+answer)).style.background="#00cc99";
           document.getElementById("choice"+((counter-counter%4)+answer)).style.color="white";
           document.getElementById("choice-word"+((counter-counter%4)+answer)).style.background="#00cc99";
