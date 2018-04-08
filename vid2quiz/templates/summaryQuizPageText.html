@@ -1,3 +1,5 @@
+{% load mathfilters %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -39,10 +41,11 @@
           }
 
         </script>
+
         <div class="summary col-md-4">
             <p>Summary</p>
             {% for part in summary %}
-            <a href=#{{part.time}} onclick="highlightText(this.innerHTML); return false;">{{part.sentence}}</a>
+            <a href='' onclick="highlightText({{part.sentence}}); return false;">{{part.sentence}}</a>
             {% endfor %}
         </div>
           <div class="col-md-1"></div>
@@ -58,13 +61,13 @@
                           <div class="body">
                           <div class="row">
                           <div class="col-sm-2"></div>
-                          <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
+                          <button class="btn btn-default col-sm-8 mc-choice" onclick="checkAnswer({{ forloop.parentloop.counter|mul:4|add:forloop.counter }}, {{ question.answer }}); return false">
                               <label class="sr-only" for="inlineFormInputGroup"></label>
                               <div class="input-group">
                               <div class="input-group-prepend">
-                                <div class="input-group-text" id="choice">{{ forloop.counter }}</div>
+                                <div class="input-group-text" id="choice{{ forloop.parentloop.counter|mul:4|add:forloop.counter }}">{{ forloop.counter }}</div>
                               </div>
-                            <input class="form-control" id="choice-word" placeholder={{answer}} readonly>
+                            <input class="form-control" id="choice-word{{ forloop.parentloop.counter|mul:4|add:forloop.counter }}" placeholder={{answer}} readonly>
                             </div>
                           </button>
                           </div>
@@ -77,6 +80,29 @@
         {% endfor %}
 
     </div>
+<script>
 
+
+    function checkAnswer(counter, answer){
+        if(counter%4==answer){
+          document.getElementById("choice"+counter).style.background="#00cc99";
+          document.getElementById("choice"+counter).style.color="white";
+          document.getElementById("choice-word"+counter).style.background="#00cc99";
+          document.getElementById("choice-word"+counter).style.color="white";
+        }
+        else{
+          document.getElementById("choice"+counter).style.background="#ff3333";
+          document.getElementById("choice"+counter).style.color="white";
+          document.getElementById("choice-word"+counter).style.background="#ff3333";
+          document.getElementById("choice-word"+counter).style.color="white";
+        }
+
+
+
+
+
+
+    }
+</script>
 </body>
 </html>
