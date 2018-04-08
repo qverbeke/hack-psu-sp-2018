@@ -14,13 +14,17 @@
     <link rel = "stylesheet" href="/static/summaryQuizPage.css">
   </head>
 <body>
-    <div class="container">
-      <div class="row video-summary">
+  <nav class="navbar nav-bar-default navbar-fixed-top">
+      <p class="app-name">RevU</p>
+  </nav>
+  <div class="page-container" style="width:100%">
+    <div class="col-sm-12 video-sum-container">
+      <div class="row video-sum" style="width:100%">
         <div class="col-md-1"></div>
-          <div class="summary col-md-6">
+        <div class="col-md-6 card text-card" style="width:100%">
 
-            <p>Text</p>
-            <p id="textbody">
+            <p class="text-title card-header">Your Text</p>
+            <p class="your-text" id="textbody">
               {{text}}
             </p>
 
@@ -42,8 +46,8 @@
 
         </script>
 
-        <div class="summary col-md-4">
-            <p>Summary</p>
+        <div class="summary card col-md-4">
+            <p class="summary-title card-header">Summary</p>
             {% for part in summary %}
             <a href='' onclick="highlightText({{part.sentence}}); return false;">{{part.sentence}}</a>
             {% endfor %}

@@ -37,11 +37,29 @@ body{
     height: 350px;
     box-shadow: 0px 10px 20px -2px #7fa7cc;
 }
+.text-card{
+  height: 300px;
+  padding: 0;
+  overflow: scroll;
+  background: none;
+}
+.text-title{
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: -5px;
+  width: 100%;
+  color: #4981b6;
+}
+.your-text{
+  line-height: 18px;
+  padding: 10px;
+}
 .summary{
     height: 300px;
     padding: 0;
     overflow: scroll;
     background: none;
+    margin-left: 20px;
 }
 .summary-title{
     font-size: 25px;
@@ -49,6 +67,10 @@ body{
     margin-bottom: -5px;
     width: 100%;
     color: #4981b6;
+}
+.sum-text{
+  line-height: 18px;
+  padding: 10px;
 }
 .mc-container{
     margin-top: 50px;
