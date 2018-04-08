@@ -20,6 +20,7 @@ body{
 }
 .content{
     padding: 20px;
+    text-align: center;
 }
 .tab{
     list-style: none;
@@ -41,15 +42,11 @@ body{
     height: 55px;
     font-size: 25px;
 }
-.submit-row{
-    margin-top: 30px;
-}
-.submit-col{
-    text-align: center;
-}
 .submit-btn{
+    margin-top: 20px;
+    border: solid 2px #e6e6e6;
     font: 15px;
-    width: 100%;
+    width: 50%;
     color: #a6a6a6;
     font-weight: 300;
 }
