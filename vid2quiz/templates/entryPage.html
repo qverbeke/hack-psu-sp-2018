@@ -27,31 +27,40 @@
           </div>
         <div class="tab-content content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="youtube-link" role="tabpanel">
-            <form id="form1" method="post" action="/summary">
+            <form id="form1" method="post" action="/videoresults">
               {% csrf_token %}
+<<<<<<< HEAD
                 <input type="text" class="form-control link-input" placeholder="Paste YouTube link here...">
+=======
+                <input name="youtube_link" type="text" class="form-control link-input" placeholder="paste YouTube link here...">
+>>>>>>> 512e5b239f0e8aab200a83c2f41d4bafe3f7dc60
                 <div class="col-sm-4 submit-col">
                 </div>
                 <button form="form1" class="btn btn-outline-light submit-btn" type="submit">submit</button>
               </form>
             </div>
           <div class="tab-pane fade" id="text-entry" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <form id="form2" method="post" action="/summary">
+            <form id="form2" method="post" action="/textresults">
               {% csrf_token %}
               <div class="form-group">
                 <textarea class="form-control text-input" rows="10" placeholder="Paste your text here..."></textarea>
               </div>
-              <button form="form1" class="btn btn-outline-light submit-btn" type="submit">submit</button>
+              <button name="text_area" form="form2" class="btn btn-outline-light submit-btn" type="submit">submit</button>
             </form>
             </div>
           <div class="tab-pane fade" id="file-upload" role="tabpanel" aria-labelledby="link-tab-content">
               <form id="form3" method="post", action="/summary">
                 {% csrf_token %}
                   <div class="form-group">
+<<<<<<< HEAD
                     <label for="exampleFormControlFile1"></label>
                     <input type="file" class="form-control-file file-input" id="exampleFormControlFile1">
+=======
+                    <label for="exampleFormControlFile1">Example file input</label>
+                    <input name="file_upload" type="file" class="form-control-file" id="exampleFormControlFile1">
+>>>>>>> 512e5b239f0e8aab200a83c2f41d4bafe3f7dc60
                   </div>
-                  <button form="form1" class="btn btn-outline-light submit-btn" type="submit">submit</button>
+                  <button form="form3" class="btn btn-outline-light submit-btn" type="submit">submit</button>
                 </form>
             </div>
         </div>
