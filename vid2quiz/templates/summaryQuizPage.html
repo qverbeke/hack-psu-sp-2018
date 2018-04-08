@@ -37,7 +37,7 @@
               var player;
               function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
-                  videoId: '{{youtube_id}}',
+                  videoId: '{{youtube_id}}'
 
                 });
               }
@@ -109,7 +109,7 @@
                           <div class="body card-body">
                           <div class="row">
                           <div class="col-sm-2"></div>
-                          <button class="btn btn-default col-sm-8 mc-choice" onclick="checkAnswer({{ forloop.parentloop.counter|mul:4|add:forloop.counter }}, {{ question.answer }}); return false">
+                          <button class="btn btn-default col-sm-8 mc-choice" onclick="checkAnswer({{ forloop.parentloop.counter|mul:4|add:forloop.counter }}, {{ question.answer }}, {{question.time}}); return false;">
                               <label class="sr-only" for="inlineFormInputGroup"></label>
                               <div class="input-group">
                               <div class="input-group-prepend">
@@ -125,6 +125,10 @@
                 </div>
             </div>
         </div>
+        <div class="container" style="text-align: center;">
+          <b><h4 id="responseTime{{ forloop.counter }}"></h4></b>
+        </div>
+        
         {% endfor %}
 
 
@@ -133,7 +137,7 @@
 <script>
 
 
-    function checkAnswer(counter, answer){
+    function checkAnswer(counter, answer, timestamp){
         if(counter%4==answer){
           document.getElementById("choice"+counter).style.background="#00cc99";
           document.getElementById("choice"+counter).style.color="white";
@@ -145,6 +149,11 @@
           document.getElementById("choice"+counter).style.color="white";
           document.getElementById("choice-word"+counter).style.background="#ff3333";
           document.getElementById("choice-word"+counter).style.color="white";
+          document.getElementById("responseTime"+Math.floor(counter/4)).innerHTML="<a href=\"\" style=\" color:white;\" onclick=\"playerSeekTo("+parseInt(timestamp)+"); return false;\">The correct answer was "+answer+". Click this link to review in the video.</a>";
+          document.getElementById("choice"+((counter-counter%4)+answer)).style.background="#00cc99";
+          document.getElementById("choice"+((counter-counter%4)+answer)).style.color="white";
+          document.getElementById("choice-word"+((counter-counter%4)+answer)).style.background="#00cc99";
+          document.getElementById("choice-word"+((counter-counter%4)+answer)).style.color="white";
         }
 
 
