@@ -1,0 +1,868 @@
+1
+00:00:01,200 --> 00:00:08,290
+ 
+
+2
+00:00:08,290 --> 00:00:11,880
+Hi. It's Mr. Andersen and in this video I'm
+going to talk about the brain structure and
+
+3
+00:00:11,880 --> 00:00:16,490
+function. Remember structure is what it's
+made up of. And function is what does it do.
+
+4
+00:00:16,490 --> 00:00:22,020
+We sometimes refer to this as the anatomy
+or structure and physiology or the function.
+
+5
+00:00:22,020 --> 00:00:25,259
+And so the cool thing is that we're going
+to go through seventeen different structures
+
+6
+00:00:25,259 --> 00:00:29,550
+in the brain, kind of lay out the basic plan
+of the brain. But you are using your brain
+
+7
+00:00:29,550 --> 00:00:33,730
+to process it. And if you do a good job when
+we get to the end and I review all the parts,
+
+8
+00:00:33,730 --> 00:00:37,590
+you should be able to tell me what their structure
+is and what their function is. And so what
+
+9
+00:00:37,590 --> 00:00:43,390
+type of organisms have brains? It's the animals.
+Animals use nerves. They have muscles to move
+
+10
+00:00:43,390 --> 00:00:47,780
+around. And so they have to organize that
+movement. And so they use a brain. And so
+
+11
+00:00:47,780 --> 00:00:52,590
+if we look at the two basic body plans of
+animals, some are radially symmetrical. In
+
+12
+00:00:52,590 --> 00:00:57,690
+other words they're built around almost a
+tire. And then some are bilaterally symmetrical.
+
+13
+00:00:57,690 --> 00:01:00,590
+In other words a tiger you could draw a line
+right down the middle. There's going to be
+
+14
+00:01:00,590 --> 00:01:05,180
+a clear right side and a left side. There's
+going to be a clear front and end. And as
+
+15
+00:01:05,180 --> 00:01:10,620
+we became bilaterally symmetrical we had to
+organize that movement. And so this is a simple
+
+16
+00:01:10,620 --> 00:01:14,930
+animal body plan. And so this animal is going
+to move towards the right. And as it does
+
+17
+00:01:14,930 --> 00:01:20,320
+so it has to take in information. We call
+that sensory information using neurons. And
+
+18
+00:01:20,320 --> 00:01:25,670
+so right now you're taking in sensory information
+from your eyes, from your ears. And then inside
+
+19
+00:01:25,670 --> 00:01:28,870
+your brain you're going to integrate that
+information. You're going to make sense of
+
+20
+00:01:28,870 --> 00:01:32,630
+it. And then you're going to figure out what
+you want to do. How you're going to act dependent
+
+21
+00:01:32,630 --> 00:01:37,770
+upon that. And so then we have this loop of
+motor neurons out. Or motor nerves. And so
+
+22
+00:01:37,770 --> 00:01:42,799
+this loop in simple animals is also important
+in understanding how our brain works. But
+
+23
+00:01:42,799 --> 00:01:46,840
+if we look at these real primitive brains
+we find that they have a real common structure.
+
+24
+00:01:46,840 --> 00:01:51,330
+They have these four humps. And we call those,
+well the first one is not a hump, but the
+
+25
+00:01:51,330 --> 00:01:56,799
+spinal cord. We then have the hindbrain, the
+midbrain and then we finally have the forebrain.
+
+26
+00:01:56,799 --> 00:02:00,729
+And we find this consistent throughout all
+animals. And if we look at something like
+
+27
+00:02:00,729 --> 00:02:05,220
+a shark, it pretty much looks just like that
+primitive brain. You can see down here we've
+
+28
+00:02:05,220 --> 00:02:09,929
+got the spinal cord that's bringing information
+in. We then have the hindbrain, the midbrain
+
+29
+00:02:09,929 --> 00:02:13,969
+and the forebrain. And so one thing you should
+remember is that the closer we are to that
+
+30
+00:02:13,969 --> 00:02:19,739
+spinal cord, the more basic the functions
+are. And so we're right down in this hindbrain.
+
+31
+00:02:19,739 --> 00:02:24,599
+It's going to be basically keeping the heart
+beating. Keep the circulation going. Digestion
+
+32
+00:02:24,599 --> 00:02:29,310
+in the shark. But when a shark decides to
+attack you or it has some kind of an emotional
+
+33
+00:02:29,310 --> 00:02:33,200
+response, that's going to be way up here in
+the forebrain. Now if we look at you when
+
+34
+00:02:33,200 --> 00:02:37,189
+you were really little, when you were an embryo,
+you had a brain that looked very similar.
+
+35
+00:02:37,189 --> 00:02:42,760
+You had a spinal cord. You then had a hindbrain.
+You had a midbrain. And then you had a forebrain.
+
+36
+00:02:42,760 --> 00:02:47,840
+But during development that brain changes
+radically. And so this is what an adult brain
+
+37
+00:02:47,840 --> 00:02:54,340
+looks like. So we still see that spinal cord.
+We then have the hindbrain. We have the midbrain.
+
+38
+00:02:54,340 --> 00:02:59,449
+But look how large that forebrain is going
+to be. So that's where all of those emotions
+
+39
+00:02:59,449 --> 00:03:03,980
+and memories and all of that thinking, we
+generally attribute to the brain is going
+
+40
+00:03:03,980 --> 00:03:07,629
+to be in the forebrain. And so let's get to
+the actual anatomy. And so there are going
+
+41
+00:03:07,629 --> 00:03:11,699
+to be 17 parts that we're going to go through.
+So you should always be thinking what's the
+
+42
+00:03:11,699 --> 00:03:16,480
+name of the structure? Where is it? And then
+what's the function, what does it do? So if
+
+43
+00:03:16,480 --> 00:03:21,669
+we look at a basic brain plan we find these
+four things jump out right away. We're going
+
+44
+00:03:21,669 --> 00:03:27,319
+to see the brainstem. We then see a cerebellum
+on the back of the brain So again to get yourself
+
+45
+00:03:27,319 --> 00:03:31,049
+oriented right the eyes are going to be right
+up here. So this would be towards the back
+
+46
+00:03:31,049 --> 00:03:36,040
+of the head. So that's going to be the cerebellum.
+We then have the area of the thalamus hypothalamus.
+
+47
+00:03:36,040 --> 00:03:39,819
+And then finally we have the cerebrum which
+is going to be that dominant upper portion
+
+48
+00:03:39,819 --> 00:03:44,159
+of the brain. And so let's begin with the
+brainstem. The brainstem is broken down into
+
+49
+00:03:44,159 --> 00:03:50,040
+three individual structures. So if we start
+at the bottom we've got the medulla oblangata,
+
+50
+00:03:50,040 --> 00:03:55,489
+the pons and then we finally have the midbrain.
+And so those three things, medulla oblangata,
+
+51
+00:03:55,489 --> 00:04:00,449
+pons and midbrain make up what we call the
+brainstem. So that the structure. What's the
+
+52
+00:04:00,449 --> 00:04:03,839
+function? Well it really does two things.
+The first thing it's going to do are these
+
+53
+00:04:03,839 --> 00:04:10,689
+more basic needs. It's going to keep yourself
+breathing, keep circulation going, digestion,
+
+54
+00:04:10,689 --> 00:04:15,479
+swallowing. All of that is going to be controlled
+by the brainstem. If there's any damage to
+
+55
+00:04:15,479 --> 00:04:20,250
+the brainstem it's going to be catastrophic.
+What else does it do? Then we have information
+
+56
+00:04:20,250 --> 00:04:24,610
+coming in. So we have sensory information,
+just like that worm did, coming up to the
+
+57
+00:04:24,610 --> 00:04:28,130
+brain. And then we have motor nerves going
+out. And so the brainstem is important in
+
+58
+00:04:28,130 --> 00:04:32,330
+routing that information and filtering that
+information, sending it where it needs to
+
+59
+00:04:32,330 --> 00:04:37,260
+go. What's behind that? We have the cerebellum
+The cerebellum, and the function of that is
+
+60
+00:04:37,260 --> 00:04:43,430
+motor control. So as you do sports, for example,
+it's the cerebellum that's giving you that
+
+61
+00:04:43,430 --> 00:04:48,200
+coordination. And it also gives you motor
+memory. So as you learn to ride a bicycle
+
+62
+00:04:48,200 --> 00:04:52,950
+and you remember how to ride a bicycle that's
+going to be thanks to your cerebellum. If
+
+63
+00:04:52,950 --> 00:04:56,940
+we keep moving up we now have the thalamus.
+The thalamus again sits right on top of the
+
+64
+00:04:56,940 --> 00:05:01,620
+brainstem. And so the best analogy I could
+come up with is a router. It's basically sorting
+
+65
+00:05:01,620 --> 00:05:06,370
+data and sending it where it needs to go.
+If we were to look below that there's a little
+
+66
+00:05:06,370 --> 00:05:09,680
+structure here that's incredibly important.
+It's called the hypothalamus. That's going
+
+67
+00:05:09,680 --> 00:05:13,950
+to be really right above the roof of your
+mouth. What is that accountable for? It's
+
+68
+00:05:13,950 --> 00:05:20,760
+homeostasis. So it's maintaining body temperature.
+It's maintaining osmolarity. All of that stuff
+
+69
+00:05:20,760 --> 00:05:26,140
+is contained right up in the hypothalamus.
+Also important in circadian rhythms. And then
+
+70
+00:05:26,140 --> 00:05:30,290
+if we look right below that you can see a
+little gland hanging out. And one-half of
+
+71
+00:05:30,290 --> 00:05:34,970
+that pituitary gland, the posterior pituitary,
+is technically part of the brain. And it's
+
+72
+00:05:34,970 --> 00:05:41,060
+important in basically sending off hormones.
+And so there are nerves that flow into that
+
+73
+00:05:41,060 --> 00:05:45,080
+pituitary and it's sending out things like
+antidiuretic hormone. That keeps your water
+
+74
+00:05:45,080 --> 00:05:49,560
+balance the same. Oxytocin would be another
+important hormone that comes out of there.
+
+75
+00:05:49,560 --> 00:05:53,980
+If we keep moving up then we get to the level
+of the cerebrum. What's the function of the
+
+76
+00:05:53,980 --> 00:05:58,430
+cerebrum? That is integration. So what we're
+doing is making sense of all of that data
+
+77
+00:05:58,430 --> 00:06:02,950
+that comes in. Now what makes up that cerebrum
+are going to be all these neurons. There's
+
+78
+00:06:02,950 --> 00:06:07,350
+tons of neurons that are connected together.
+Billions of neurons. And billions and billions
+
+79
+00:06:07,350 --> 00:06:12,520
+of synapses or connections between these neurons.
+And that's where we're making sense of information
+
+80
+00:06:12,520 --> 00:06:18,110
+as it comes in. Now if you were to look at
+this image right here, so of that brick wall,
+
+81
+00:06:18,110 --> 00:06:21,670
+so take a moment to look at that and I'm going
+to show you some other images. Now focus on
+
+82
+00:06:21,670 --> 00:06:28,670
+this. And then that. And then that. And what
+we find is as you look at those images your
+
+83
+00:06:31,520 --> 00:06:35,840
+brain is integrating. It's making sense of
+all that information. And it used to be a
+
+84
+00:06:35,840 --> 00:06:39,990
+black box. We didn't know really what was
+going on. But now we can use technology like
+
+85
+00:06:39,990 --> 00:06:45,660
+a functional MRI. A functional magnetic resonance
+imaging. And what we're looking at here is
+
+86
+00:06:45,660 --> 00:06:50,020
+a brain in action. So this same study was
+done on females. And what they would show
+
+87
+00:06:50,020 --> 00:06:54,820
+them is something neutral, like a brick wall.
+And then a kitten. And then something like
+
+88
+00:06:54,820 --> 00:07:00,010
+dirt. And then something like puppies. And
+so what we're seeing is as those images are
+
+89
+00:07:00,010 --> 00:07:04,120
+switching back and forth we can start to see
+where blood is flowing around in the brain
+
+90
+00:07:04,120 --> 00:07:08,300
+and we can start to figure out what the different
+parts of the brain actually do. We're able
+
+91
+00:07:08,300 --> 00:07:12,550
+to figure out their function. So when we're
+looking at the cerebrum every picture that
+
+92
+00:07:12,550 --> 00:07:17,490
+I've shown you is from the side. So the eye
+is up here. But if we were to rotate that
+
+93
+00:07:17,490 --> 00:07:21,520
+90 degrees now were looking at it head on,
+we'll find that there are two hemispheres.
+
+94
+00:07:21,520 --> 00:07:25,760
+There's going to be a right and a left hemisphere.
+Now they are connected in the middle using
+
+95
+00:07:25,760 --> 00:07:30,230
+something called the corpus collosum. So that's
+a connection of nerves in between the two
+
+96
+00:07:30,230 --> 00:07:34,620
+hemispheres. And we do tend to show lateralization.
+There are going to be certain things that
+
+97
+00:07:34,620 --> 00:07:39,420
+we put kind of on the left side of our brain,
+like mathematical reasoning and logic. And
+
+98
+00:07:39,420 --> 00:07:43,930
+things that we put on the right side like
+facial recognition. Now this is plastic. In
+
+99
+00:07:43,930 --> 00:07:47,900
+other words we can move these functions back
+and forth. And you can even have a radical
+
+100
+00:07:47,900 --> 00:07:53,300
+hemispherectomy, where you're cutting one
+of these out and you still have a functioning
+
+101
+00:07:53,300 --> 00:07:57,450
+brain. Now if we were to go right below the
+corpus collosum we get into this area called
+
+102
+00:07:57,450 --> 00:08:02,990
+the basal ganglia. And it's made up of a bunch
+of nuclei. What are nuclei? Or what is a nucleus
+
+103
+00:08:02,990 --> 00:08:07,010
+in a brain? It's basically a bunch of neurons
+that are right next to each other that have
+
+104
+00:08:07,010 --> 00:08:12,360
+the same function. And so all of these nuclei
+together make up what's called the basal ganglia.
+
+105
+00:08:12,360 --> 00:08:16,760
+And you can see this would be the corpus collosum,
+connecting it together as well. So this is
+
+106
+00:08:16,760 --> 00:08:22,000
+below the cerebral cortex. What's the function
+of that? Well scientists have been able to
+
+107
+00:08:22,000 --> 00:08:27,900
+figure out there is this complex interaction
+of inhibition and excitatory response between
+
+108
+00:08:27,900 --> 00:08:31,550
+these neurons. And basically it controls a
+lot of our motor control. And if you have
+
+109
+00:08:31,550 --> 00:08:35,999
+somebody who has Parkinson's disease then
+we're having problems in this basal ganglia
+
+110
+00:08:35,999 --> 00:08:41,009
+area. As we move farther up the brain we eventually
+get to the cerebral cortex. And that's going
+
+111
+00:08:41,009 --> 00:08:45,149
+to make up about 80 percent of the brain.
+So it's most of the brain itself. And it's
+
+112
+00:08:45,149 --> 00:08:49,180
+broken apart into these four lobes. And so
+if we start in the front of the brain we have
+
+113
+00:08:49,180 --> 00:08:54,079
+what's called the frontal lobe. What's the
+function of that? It's mostly executive function.
+
+114
+00:08:54,079 --> 00:08:59,100
+So it's kind of like the boss of your brain.
+It's emotional control up there. And if we
+
+115
+00:08:59,100 --> 00:09:04,100
+have people who have damage to that frontal
+lobe they have really huge emotional swings.
+
+116
+00:09:04,100 --> 00:09:08,889
+As we move back towards the back of the brain
+we get to the parietal lobe. What's the function
+
+117
+00:09:08,889 --> 00:09:15,079
+of that? It basically is sensation. It's you
+dealing with and reacting to your environment.
+
+118
+00:09:15,079 --> 00:09:19,970
+So we have a lot of neurons coming in here
+from a sensory input. As we move to the back
+
+119
+00:09:19,970 --> 00:09:25,430
+we have the occipital lobe. The function of
+that is vision, primarily vision. And then
+
+120
+00:09:25,430 --> 00:09:29,980
+we move on to the side. We have what are called
+the temporal lobe. Temporal lobe is going
+
+121
+00:09:29,980 --> 00:09:34,829
+to be important in language. It's important
+in hearing. It's also important in memory.
+
+122
+00:09:34,829 --> 00:09:39,019
+We have a lot of memories in there. And so
+each of these lobes have different functions
+
+123
+00:09:39,019 --> 00:09:43,139
+that are associated with it. And hopefully
+those little icons help you remember those
+
+124
+00:09:43,139 --> 00:09:47,220
+functions. Now if we were to go inside the
+parietal zone we'd find a really important
+
+125
+00:09:47,220 --> 00:09:52,389
+part here. It's called the somatosensory cortex.
+And that's where sensory information is coming
+
+126
+00:09:52,389 --> 00:09:55,819
+into the brain. And then on the other side
+of the lobe we have what's called the motor
+
+127
+00:09:55,819 --> 00:10:00,920
+cortex. And so going way back to that worm,
+we have information coming in, sensory information.
+
+128
+00:10:00,920 --> 00:10:04,850
+And then we have motor output coming out.
+And so that's going to be a point of integration
+
+129
+00:10:04,850 --> 00:10:08,459
+where we get information in. Decide what we
+want to do with it. And then send that message
+
+130
+00:10:08,459 --> 00:10:14,009
+back out. Now if we were to look at that somatosensory
+cortex and map it along the cerebral cortex,
+
+131
+00:10:14,009 --> 00:10:18,910
+we would find that we dedicate huge amounts
+of that brain surface area to things like
+
+132
+00:10:18,910 --> 00:10:24,600
+your fingers, your tongue, your lips. In other
+words we have way more neurons and way more
+
+133
+00:10:24,600 --> 00:10:29,949
+sensory information coming in from your fingers
+as opposed to, for example, your back. We
+
+134
+00:10:29,949 --> 00:10:34,709
+don't have as much of it dedicated to that
+on the back side. We could also functional
+
+135
+00:10:34,709 --> 00:10:39,720
+MRIs and then even an operation to figure
+out where a lot of these things are located,
+
+136
+00:10:39,720 --> 00:10:44,990
+like speech and smell and hearing. But over
+the future we're going to get really really
+
+137
+00:10:44,990 --> 00:10:48,619
+good at figuring out specifically what are
+all of the different parts of the brain. What
+
+138
+00:10:48,619 --> 00:10:53,490
+are the nuclei? What do they do? And even
+mapping it down to the level of the neuron.
+
+139
+00:10:53,490 --> 00:10:58,009
+So how did you do? Do you remember those 17
+different structures and their functions?
+
+140
+00:10:58,009 --> 00:11:03,019
+Well it's time to review. So let's go through
+it. What's this one at the bottom? Overall
+
+141
+00:11:03,019 --> 00:11:08,399
+we call that the brainstem. Hopefully you
+got that. What are the three parts of the
+
+142
+00:11:08,399 --> 00:11:11,569
+brainstem though? Do you remember that? Could
+you pause the video and then say what they
+
+143
+00:11:11,569 --> 00:11:15,850
+are? Well starting from the bottom remember
+we have the medulla oblongata. We then have
+
+144
+00:11:15,850 --> 00:11:19,529
+the pons. And then we have the midbrain. So
+that's going to be the structure and where
+
+145
+00:11:19,529 --> 00:11:25,689
+it's found. Can you remember the two functions
+of the brainstem? Two big things were, number
+
+146
+00:11:25,689 --> 00:11:31,259
+one is to maintain breathing, heart rate,
+digestion, swallowing. So these fundamental
+
+147
+00:11:31,259 --> 00:11:35,819
+properties of life. But what's the second
+one? Remember it's to sort information going
+
+148
+00:11:35,819 --> 00:11:41,490
+up and down. What's behind that? What's that
+structure called? That is the cerebellum.
+
+149
+00:11:41,490 --> 00:11:45,240
+And so what's the cerebellum do? Remember
+that's coordination, motor control and also
+
+150
+00:11:45,240 --> 00:11:51,610
+motor memory. Do you remember what sits right
+up above the brainstem? That is the thalamus.
+
+151
+00:11:51,610 --> 00:11:55,889
+What's the thalamus do? Remember it sorts
+information as it moves up to the upper parts
+
+152
+00:11:55,889 --> 00:12:01,600
+of the cerebrum. What's below that? That is
+the hypothalamus. Underneath that. What does
+
+153
+00:12:01,600 --> 00:12:06,249
+that do? Remember that's homeostasis. It's
+maintaining that internal body state. Do you
+
+154
+00:12:06,249 --> 00:12:11,839
+remember what hangs off the bottom of that?
+That is the posterior pituitary. Hopefully
+
+155
+00:12:11,839 --> 00:12:16,509
+you're doing well so far. If we keep going
+then, what is this upper portion of the brain
+
+156
+00:12:16,509 --> 00:12:22,040
+called? We call that the cerebrum. Okay let's
+keep going into the cerebrum the. So do you
+
+157
+00:12:22,040 --> 00:12:26,160
+remember what's that connection between the
+two hemispheres of the brain? We call that
+
+158
+00:12:26,160 --> 00:12:31,600
+the corpus callosum. And do you remember what
+we call those little nuclei that are found
+
+159
+00:12:31,600 --> 00:12:37,179
+below that cerebrum? Those are called the
+basal ganglia. And they're really important
+
+160
+00:12:37,179 --> 00:12:42,269
+in motor control. And remember the corpus
+callosum allows our hemispheres to connect.
+
+161
+00:12:42,269 --> 00:12:47,100
+If we were to go up to the upper portion,
+what do we call this, you know, highly folded
+
+162
+00:12:47,100 --> 00:12:51,290
+upper portion of the cerebrum? That's called
+the cerebral cortex. Do you remember what
+
+163
+00:12:51,290 --> 00:12:55,490
+the front lobe is called? That was pretty
+easy. That's called the frontal lobe. What
+
+164
+00:12:55,490 --> 00:12:59,970
+about the yellow lobe right here? That's called
+the parietal lobe. Do you remember what they
+
+165
+00:12:59,970 --> 00:13:04,889
+do? Frontal lobe remember is executive or
+boss like functions. And then parietal is
+
+166
+00:13:04,889 --> 00:13:08,990
+going to be sensation of the environment.
+What about at the end? Do you remember that?
+
+167
+00:13:08,990 --> 00:13:13,790
+That's called the occipital. And then what
+about the bottom? That's the temporal. Occipital
+
+168
+00:13:13,790 --> 00:13:18,410
+remember is the location where we have vision.
+And then temporal is going to be more language,
+
+169
+00:13:18,410 --> 00:13:22,300
+hearing, memories are there. Now there are
+two other parts in our lobe. So what do we
+
+170
+00:13:22,300 --> 00:13:26,929
+call this area right here? And then this area
+right here? Those are called the somatosensory
+
+171
+00:13:26,929 --> 00:13:31,389
+cortex. Remember that takes in information,
+makes sense of it. And then we have the motor
+
+172
+00:13:31,389 --> 00:13:35,959
+cortex which is sending information out. So
+those are those 17 structures. If you don't
+
+173
+00:13:35,959 --> 00:13:40,220
+remember them you may want to watch the video
+again. Maybe make some flashcards. But that's
+
+174
+00:13:40,220 --> 00:13:47,220
+the brain. And I hope that was helpful.
+
