@@ -1,0 +1,41 @@
+body{
+    height: 700px;
+    background: #c9f2e7;
+    background: -moz-linear-gradient(top, #c9f2e7 0%, #9ee5d3 41%, #00cc99 100%);
+    background: -webkit-linear-gradient(top, #c9f2e7 0%,#9ee5d3 41%,#00cc99 100%);
+    background: linear-gradient(to bottom, #c9f2e7 0%,#9ee5d3 41%,#00cc99 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9f2e7', endColorstr='#00cc99',GradientType=0 );/
+    
+}
+.welcome{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    color: white;
+}
+.entry-card{
+    background: none;
+    border: none;
+}
+.content{
+    padding: 20px;
+}
+.tab{
+    background:none;
+    border: solid 3px white;
+}
+.tab:hover{
+    border: solid 3px white;
+}
+.tab:focus{
+    border: solid 3px white;
+}
+.tab-content{
+    background: white;
+    border: solid 3px white;
+}
+.link-input{
+    height: 55px;
+    font-size: 25px;
+}
