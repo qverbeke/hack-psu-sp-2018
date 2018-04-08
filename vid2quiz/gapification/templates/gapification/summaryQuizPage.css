@@ -1,0 +1,10 @@
+.video-summary{
+    padding-top: 50px;
+}
+.summary{
+    height: 300px;
+    overflow: scroll;
+}
+.choice{
+    cursor: pointer;
+}
