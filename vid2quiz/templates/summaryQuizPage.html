@@ -61,104 +61,36 @@
         </div>
           <div class="col-md-1"></div>
         </div>
+        {% for question in gap %}
         <div class="row mc-container">
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="mc-card">
-                  {% for question in gap %}
                     <form class="card question">
                         <p class="card-header">{{question.gap_sentence}}</p>
-                        <div class="body">
-                        <div class="row">
-                        <div class="col-sm-2"></div>
-                        <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                            <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                            <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text" id="choice">A</div>
+                        {% for answer in question.distractors %}
+                          <div class="body">
+                          <div class="row">
+                          <div class="col-sm-2"></div>
+                          <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
+                              <label class="sr-only" for="inlineFormInputGroup"></label>
+                              <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text" id="choice">{{ forloop.counter }}</div>
+                              </div>
+                            <input class="form-control" id="choice-word" placeholder={{answer}} readonly>
                             </div>
-                          <input class="form-control" id="choice-word" placeholder="cortex" readonly>
+                          </button>
                           </div>
-                        </button>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-2"></div>
-                        <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                            <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                            <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text" id="choice">A</div>
-                            </div>
-                          <input class="form-control" id="choice-word" placeholder="cortex" readonly>
                           </div>
-                        </button>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-2"></div>
-                        <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                            <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                            <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text" id="choice">A</div>
-                            </div>
-                          <input class="form-control" id="choice-word" placeholder="cortex" readonly>
-                          </div>
-                        </button>
-                        </div>
-                        </div>
+                        {% endfor %}
                     </form>
-                    {% endfor %}
                 </div>
             </div>
         </div>
-        <div class="row mc-container">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <div class="mc-card">
-                <form class="card question">
-                    <p class="card-header">Most of the cranial nerves arise from the ________.</p>
-                    <div class="body">
-                    <div class="row">
-                    <div class="col-sm-2"></div>
-                    <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                        <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                        <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text" id="choice">A</div>
-                        </div>
-                      <input class="form-control" id="choice-word" placeholder="cortex" readonly>
-                      </div>
-                    </button>
-                    </div>
-                    <div class="row">
-                    <div class="col-sm-2"></div>
-                    <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                        <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                        <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text" id="choice">A</div>
-                        </div>
-                      <input class="form-control" id="choice-word" placeholder="cortex" readonly>
-                      </div>
-                    </button>
-                    </div>
-                    <div class="row">
-                    <div class="col-sm-2"></div>
-                    <button class="btn btn-default col-sm-8 mc-choice" onclick="colorChange(); return false">
-                        <label class="sr-only" for="inlineFormInputGroup">Cortex</label>
-                        <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text" id="choice">A</div>
-                        </div>
-                      <input class="form-control" id="choice-word" placeholder="cortex" readonly>
-                      </div>
-                    </button>
-                    </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        </div>
+        {% endfor %}
+
+        
     </div>
 
 <script>

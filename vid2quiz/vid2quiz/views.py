@@ -22,7 +22,7 @@ def summary_quiz_page2(request):
     captions = [[sentence, time]...]
     """
 gap = [{"original_sentence":"This is the original sentence", "gap_sentence":"This is the gap sentence", "answer":3, "distractors":["a","b","c", "d"]},
-{"original-sentence":"This is the original sentence2", "gap-sentence":"This is the gap sentence2", "answer":1, "distractors":["e","f","g", "h"]}
+{"original_sentence":"This is the original sentence2", "gap_sentence":"This is the gap sentence2", "answer":1, "distractors":["e","f","g", "h"]}
 ]
 
 summary = [{"sentence":"sentence1", "time":1}, {"sentence":"sentence2", "time":2},{"sentence":"sentence3", "time":3},{"sentence":"sentence4", "time":4}, ]
