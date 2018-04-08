@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpRequest
+test_var = "wejoifwejoifewj"
 def entry_page(request):
     return render(request, 'entryPage.html')
 """def summary_quiz_page(request):
@@ -20,11 +21,11 @@ def link_entered_page(request):
         youtube_url = var_dict["youtube_link"][0]
         youtube_id = youtube_url[youtube_url.find("?v=")+3:]
         print(youtube_id)
-    return render(request, 'summaryQuizPageText.html')
+    return render(request, 'summaryQuizPage.html', {"content":["hello","hello"]} )
 def text_entered_page(request):
     if request.method == "POST":
         var_dict = dict(request.POST)
         print(var_dict)
         text_area = var_dict["text_area"][0]
         print(text_area)
-    return render(request, 'summaryQuizPage.html')
+    return render(request, 'summaryQuizPageText.html', {"content":["hello","hello"] })
