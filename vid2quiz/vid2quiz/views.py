@@ -45,4 +45,8 @@ def text_entered_page(request):
         print(var_dict)
         text_area = var_dict["text_area"][0]
         print(text_area)
-    return render(request, 'summaryQuizPageText.html', {"content":["hello","hello"] })
+    global gap
+    global summary
+    global captions
+    response_dict = {"text":text_area,"gap":gap, "summary":summary, "captions":captions}
+    return render(request, 'summaryQuizPageText.html', response_dict)

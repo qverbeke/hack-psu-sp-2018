@@ -39,9 +39,9 @@
             <form id="form2" method="post" action="/textresults">
               {% csrf_token %}
               <div class="form-group">
-                <textarea class="form-control" rows="5" placeholder="Paste your text here..."></textarea>
+                <textarea name="text_area" class="form-control" rows="5" placeholder="Paste your text here..."></textarea>
               </div>
-              <button name="text_area" form="form2" class="btn btn-outline-light submit-btn" type="submit">submit</button>
+              <button form="form2" class="btn btn-outline-light submit-btn" type="submit">submit</button>
             </form>
             </div>
           <div class="tab-pane fade" id="file-upload" role="tabpanel" aria-labelledby="link-tab-content">
