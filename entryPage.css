@@ -48,6 +48,7 @@ body{
     text-align: center;
 }
 .submit-btn{
+    font: 15px;
     width: 100%;
     color: #a6a6a6;
     font-weight: 300;
