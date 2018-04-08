@@ -21,8 +21,8 @@ body{
     margin-right: 30px;
 }
 .mc-choice{
-    
-    
+
+
 }
 .body{
     padding-top: 10px;
@@ -33,7 +33,7 @@ body{
     border: solid white 1px;
 }
 #choice :active{
-    cursor: pointer; 
+    cursor: pointer;
 }
 #choice-word{
     cursor: pointer;

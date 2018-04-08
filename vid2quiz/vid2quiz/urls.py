@@ -23,5 +23,7 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^main', views.entry_page),
-    url(r'^summary', views.summary_quiz_page)
+    url(r'^summary$', views.summary_quiz_page),
+    url(r'^summary2$', views.summary_quiz_page2)
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
