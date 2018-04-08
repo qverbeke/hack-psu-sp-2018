@@ -7,19 +7,51 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <title>Summary and Quiz</title>
+    <title>Summary and Quiz</title>
     
-      <link rel = "stylesheet" href="summaryQuizPage.css">
-
+    <link rel = "stylesheet" href="summaryQuizPage.css">
   </head>
 <body>
-    <div class="container">
-      <div class="row video-summary">
+    <div class="container" style="width:100%">
+      <div class="row video-summary" style="width:100%">
         <div class="col-md-1"></div>
-        <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
-            </div>
+          <div class="col-md-6" style="width:100%">
+            <div id="player" style="width:100%; height:100%; "></div>
+
+            <script>
+              // 2. This code loads the IFrame Player API code asynchronously.
+              var tag = document.createElement('script');
+
+              tag.src = "https://www.youtube.com/iframe_api";
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+              // 3. This function creates an <iframe> (and YouTube player)
+              //    after the API code downloads.
+              var player;
+              function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                  videoId: 'C1xwCUMbcCc',
+                  events: {
+                    'onReady': onPlayerReady,
+                  }
+                });
+              }
+
+              function onPlayerReady(event) {
+                event.target.playVideo();
+              }
+              function stopVideo() {
+                player.stopVideo();
+              }
+            //generic seekTo function taking a player element and seconds as parameters    
+            function playerSeekTo(seconds) {
+                player.seekTo(seconds);
+            }
+
+
+
+            </script>
           </div> 
         <div class="summary col-md-4">
             <p class="summary-title">Summary</p>
