@@ -70,15 +70,22 @@
         <div class="summary col-md-4">
             <p class="summary-title">Summary</p>
             {% for part in summary %}
-<<<<<<< HEAD
-            <a href=# onclick=playerSeekTo({{part.time}});>{{part.sentence}}</a>
-=======
-            <a href="" onclick=playerSeekTo({{part.time}})>{{part.sentence}}</a>
->>>>>>> a189d20c032f1af5b549411e29beca527cf1eaa8
+            <a href="" onclick="playerSeekTo({{part.time}}); return false;">{{part.sentence}}</a>
+
             {% endfor %}
             <a href=# hidden onclick=seekToWord("sentence1");>text</a>
 
         </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="input-group">
+                <input type="text" class="form-control" id="searchbar" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                <a href="" onclick="seekToWord(document.getElementById('searchbar').value); return false;" style="background-color: #AAA; height:fill-parent"><span class="input-group-addon" id="basic-addon2" style="color:black">Search for word usage</span></a>
+              </div>
+            </div>
           <div class="col-md-1"></div>
         </div>
         {% for question in gap %}
